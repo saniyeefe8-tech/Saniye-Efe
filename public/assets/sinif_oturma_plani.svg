@@ -1,0 +1,209 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1150" width="800" height="1150" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <defs>
+    <style>
+      .title { font-weight: 900; font-size: 32px; fill: #1e293b; text-anchor: middle; letter-spacing: 2px; }
+      .header-sub { font-size: 16px; font-weight: 600; fill: #475569; text-anchor: middle; }
+      .desk-label { font-size: 13px; font-weight: bold; fill: #334155; text-anchor: middle; }
+      .motto { font-size: 20px; font-weight: 800; fill: #0f172a; text-anchor: middle; }
+    </style>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-opacity="0.12" />
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="800" height="1150" fill="#f8fafc" />
+  <rect x="25" y="25" width="750" height="1100" rx="30" fill="#ffffff" stroke="#334155" stroke-width="4" filter="url(#shadow)" />
+
+  <!-- Room Door (Top Right) -->
+  <g transform="translate(680, 50)">
+    <rect x="0" y="0" width="55" height="100" rx="4" fill="#fef3c7" stroke="#78350f" stroke-width="3" />
+    <circle cx="45" cy="55" r="4" fill="#78350f" />
+    <text x="27" y="90" font-size="12" font-weight="900" fill="#78350f" text-anchor="middle">KAPI</text>
+  </g>
+
+  <!-- TAHTA (Classroom Board) -->
+  <rect x="230" y="55" width="340" height="90" rx="8" fill="#ffffff" stroke="#475569" stroke-width="4" filter="url(#shadow)" />
+  <text x="400" y="112" class="title">TAHTA</text>
+  <!-- Board Markers & Eraser -->
+  <rect x="510" y="132" width="14" height="6" rx="2" fill="#ef4444" />
+  <rect x="528" y="132" width="14" height="6" rx="2" fill="#2563eb" />
+  <rect x="546" y="130" width="16" height="8" rx="2" fill="#334155" />
+
+  <!-- Plant (Top Left) -->
+  <g transform="translate(60, 90)">
+    <text font-size="44">🪴</text>
+  </g>
+
+  <!-- ÖĞRETMEN MASASI -->
+  <g transform="translate(130, 165)">
+    <rect x="0" y="0" width="220" height="75" rx="12" fill="#fef3c7" stroke="#92400e" stroke-width="3" filter="url(#shadow)" />
+    <!-- Laptop & Supplies -->
+    <rect x="25" y="12" width="38" height="24" rx="3" fill="#64748b" />
+    <rect x="20" y="36" width="48" height="6" rx="2" fill="#94a3b8" />
+    <rect x="155" y="15" width="35" height="24" rx="2" fill="#38bdf8" stroke="#0284c7" stroke-width="1.5" />
+    <text x="110" y="62" font-size="16" font-weight="900" fill="#78350f" text-anchor="middle" letter-spacing="1px">ÖĞRETMEN MASASI</text>
+  </g>
+
+  <!-- Bookshelf (Top Right below door) -->
+  <g transform="translate(565, 160)">
+    <rect x="0" y="0" width="105" height="90" rx="8" fill="#fef3c7" stroke="#92400e" stroke-width="3" />
+    <text x="52" y="-5" font-size="22" text-anchor="middle">🌱</text>
+    <rect x="10" y="20" width="85" height="28" fill="#fed7aa" stroke="#c2410c" stroke-width="1.5" />
+    <!-- Books -->
+    <rect x="18" y="24" width="10" height="22" fill="#ef4444" />
+    <rect x="30" y="24" width="10" height="22" fill="#3b82f6" />
+    <rect x="42" y="24" width="10" height="22" fill="#10b981" />
+    <rect x="54" y="24" width="10" height="22" fill="#f59e0b" />
+    <text x="52" y="75" font-size="13" font-weight="bold" fill="#78350f" text-anchor="middle">Kitaplık</text>
+  </g>
+
+  <!-- ==================== DESK COLUMNS ==================== -->
+  
+  <!-- Column 1: Blue (Left) -->
+  <rect x="55" y="280" width="210" height="690" rx="20" fill="#f0f9ff" stroke="#7dd3fc" stroke-width="3" />
+  <!-- 5 Desks in Column 1 -->
+  <!-- Desk 1 -->
+  <g transform="translate(70, 300)">
+    <rect x="0" y="0" width="180" height="80" rx="14" fill="#fef3c7" stroke="#b45309" stroke-width="2.5" />
+    <rect x="10" y="8" width="160" height="36" rx="8" fill="#ffffff" stroke="#f59e0b" stroke-width="1.5" />
+    <line x1="90" y1="8" x2="90" y2="44" stroke="#e2e8f0" stroke-width="1.5" />
+    <!-- Chairs -->
+    <rect x="25" y="48" width="45" height="24" rx="6" fill="#0284c7" stroke="#0369a1" stroke-width="2" />
+    <rect x="110" y="48" width="45" height="24" rx="6" fill="#0284c7" stroke="#0369a1" stroke-width="2" />
+  </g>
+  <!-- Desk 2 -->
+  <g transform="translate(70, 435)">
+    <rect x="0" y="0" width="180" height="80" rx="14" fill="#fef3c7" stroke="#b45309" stroke-width="2.5" />
+    <rect x="10" y="8" width="160" height="36" rx="8" fill="#ffffff" stroke="#f59e0b" stroke-width="1.5" />
+    <line x1="90" y1="8" x2="90" y2="44" stroke="#e2e8f0" stroke-width="1.5" />
+    <rect x="25" y="48" width="45" height="24" rx="6" fill="#0284c7" stroke="#0369a1" stroke-width="2" />
+    <rect x="110" y="48" width="45" height="24" rx="6" fill="#0284c7" stroke="#0369a1" stroke-width="2" />
+  </g>
+  <!-- Desk 3 -->
+  <g transform="translate(70, 570)">
+    <rect x="0" y="0" width="180" height="80" rx="14" fill="#fef3c7" stroke="#b45309" stroke-width="2.5" />
+    <rect x="10" y="8" width="160" height="36" rx="8" fill="#ffffff" stroke="#f59e0b" stroke-width="1.5" />
+    <line x1="90" y1="8" x2="90" y2="44" stroke="#e2e8f0" stroke-width="1.5" />
+    <rect x="25" y="48" width="45" height="24" rx="6" fill="#0284c7" stroke="#0369a1" stroke-width="2" />
+    <rect x="110" y="48" width="45" height="24" rx="6" fill="#0284c7" stroke="#0369a1" stroke-width="2" />
+  </g>
+  <!-- Desk 4 -->
+  <g transform="translate(70, 705)">
+    <rect x="0" y="0" width="180" height="80" rx="14" fill="#fef3c7" stroke="#b45309" stroke-width="2.5" />
+    <rect x="10" y="8" width="160" height="36" rx="8" fill="#ffffff" stroke="#f59e0b" stroke-width="1.5" />
+    <line x1="90" y1="8" x2="90" y2="44" stroke="#e2e8f0" stroke-width="1.5" />
+    <rect x="25" y="48" width="45" height="24" rx="6" fill="#0284c7" stroke="#0369a1" stroke-width="2" />
+    <rect x="110" y="48" width="45" height="24" rx="6" fill="#0284c7" stroke="#0369a1" stroke-width="2" />
+  </g>
+  <!-- Desk 5 -->
+  <g transform="translate(70, 840)">
+    <rect x="0" y="0" width="180" height="80" rx="14" fill="#fef3c7" stroke="#b45309" stroke-width="2.5" />
+    <rect x="10" y="8" width="160" height="36" rx="8" fill="#ffffff" stroke="#f59e0b" stroke-width="1.5" />
+    <line x1="90" y1="8" x2="90" y2="44" stroke="#e2e8f0" stroke-width="1.5" />
+    <rect x="25" y="48" width="45" height="24" rx="6" fill="#0284c7" stroke="#0369a1" stroke-width="2" />
+    <rect x="110" y="48" width="45" height="24" rx="6" fill="#0284c7" stroke="#0369a1" stroke-width="2" />
+  </g>
+
+  <!-- Column 2: Green (Middle) -->
+  <rect x="295" y="280" width="210" height="690" rx="20" fill="#ecfdf5" stroke="#6ee7b7" stroke-width="3" />
+  <!-- 5 Desks in Column 2 -->
+  <g transform="translate(310, 300)">
+    <rect x="0" y="0" width="180" height="80" rx="14" fill="#fef3c7" stroke="#b45309" stroke-width="2.5" />
+    <rect x="10" y="8" width="160" height="36" rx="8" fill="#ffffff" stroke="#f59e0b" stroke-width="1.5" />
+    <line x1="90" y1="8" x2="90" y2="44" stroke="#e2e8f0" stroke-width="1.5" />
+    <rect x="25" y="48" width="45" height="24" rx="6" fill="#059669" stroke="#047857" stroke-width="2" />
+    <rect x="110" y="48" width="45" height="24" rx="6" fill="#059669" stroke="#047857" stroke-width="2" />
+  </g>
+  <g transform="translate(310, 435)">
+    <rect x="0" y="0" width="180" height="80" rx="14" fill="#fef3c7" stroke="#b45309" stroke-width="2.5" />
+    <rect x="10" y="8" width="160" height="36" rx="8" fill="#ffffff" stroke="#f59e0b" stroke-width="1.5" />
+    <line x1="90" y1="8" x2="90" y2="44" stroke="#e2e8f0" stroke-width="1.5" />
+    <rect x="25" y="48" width="45" height="24" rx="6" fill="#059669" stroke="#047857" stroke-width="2" />
+    <rect x="110" y="48" width="45" height="24" rx="6" fill="#059669" stroke="#047857" stroke-width="2" />
+  </g>
+  <g transform="translate(310, 570)">
+    <rect x="0" y="0" width="180" height="80" rx="14" fill="#fef3c7" stroke="#b45309" stroke-width="2.5" />
+    <rect x="10" y="8" width="160" height="36" rx="8" fill="#ffffff" stroke="#f59e0b" stroke-width="1.5" />
+    <line x1="90" y1="8" x2="90" y2="44" stroke="#e2e8f0" stroke-width="1.5" />
+    <rect x="25" y="48" width="45" height="24" rx="6" fill="#059669" stroke="#047857" stroke-width="2" />
+    <rect x="110" y="48" width="45" height="24" rx="6" fill="#059669" stroke="#047857" stroke-width="2" />
+  </g>
+  <g transform="translate(310, 705)">
+    <rect x="0" y="0" width="180" height="80" rx="14" fill="#fef3c7" stroke="#b45309" stroke-width="2.5" />
+    <rect x="10" y="8" width="160" height="36" rx="8" fill="#ffffff" stroke="#f59e0b" stroke-width="1.5" />
+    <line x1="90" y1="8" x2="90" y2="44" stroke="#e2e8f0" stroke-width="1.5" />
+    <rect x="25" y="48" width="45" height="24" rx="6" fill="#059669" stroke="#047857" stroke-width="2" />
+    <rect x="110" y="48" width="45" height="24" rx="6" fill="#059669" stroke="#047857" stroke-width="2" />
+  </g>
+  <g transform="translate(310, 840)">
+    <rect x="0" y="0" width="180" height="80" rx="14" fill="#fef3c7" stroke="#b45309" stroke-width="2.5" />
+    <rect x="10" y="8" width="160" height="36" rx="8" fill="#ffffff" stroke="#f59e0b" stroke-width="1.5" />
+    <line x1="90" y1="8" x2="90" y2="44" stroke="#e2e8f0" stroke-width="1.5" />
+    <rect x="25" y="48" width="45" height="24" rx="6" fill="#059669" stroke="#047857" stroke-width="2" />
+    <rect x="110" y="48" width="45" height="24" rx="6" fill="#059669" stroke="#047857" stroke-width="2" />
+  </g>
+
+  <!-- Column 3: Orange (Right) -->
+  <rect x="535" y="280" width="210" height="690" rx="20" fill="#fff7ed" stroke="#fdba74" stroke-width="3" />
+  <!-- 5 Desks in Column 3 -->
+  <g transform="translate(550, 300)">
+    <rect x="0" y="0" width="180" height="80" rx="14" fill="#fef3c7" stroke="#b45309" stroke-width="2.5" />
+    <rect x="10" y="8" width="160" height="36" rx="8" fill="#ffffff" stroke="#f59e0b" stroke-width="1.5" />
+    <line x1="90" y1="8" x2="90" y2="44" stroke="#e2e8f0" stroke-width="1.5" />
+    <rect x="25" y="48" width="45" height="24" rx="6" fill="#ea580c" stroke="#c2410c" stroke-width="2" />
+    <rect x="110" y="48" width="45" height="24" rx="6" fill="#ea580c" stroke="#c2410c" stroke-width="2" />
+  </g>
+  <g transform="translate(550, 435)">
+    <rect x="0" y="0" width="180" height="80" rx="14" fill="#fef3c7" stroke="#b45309" stroke-width="2.5" />
+    <rect x="10" y="8" width="160" height="36" rx="8" fill="#ffffff" stroke="#f59e0b" stroke-width="1.5" />
+    <line x1="90" y1="8" x2="90" y2="44" stroke="#e2e8f0" stroke-width="1.5" />
+    <rect x="25" y="48" width="45" height="24" rx="6" fill="#ea580c" stroke="#c2410c" stroke-width="2" />
+    <rect x="110" y="48" width="45" height="24" rx="6" fill="#ea580c" stroke="#c2410c" stroke-width="2" />
+  </g>
+  <g transform="translate(550, 570)">
+    <rect x="0" y="0" width="180" height="80" rx="14" fill="#fef3c7" stroke="#b45309" stroke-width="2.5" />
+    <rect x="10" y="8" width="160" height="36" rx="8" fill="#ffffff" stroke="#f59e0b" stroke-width="1.5" />
+    <line x1="90" y1="8" x2="90" y2="44" stroke="#e2e8f0" stroke-width="1.5" />
+    <rect x="25" y="48" width="45" height="24" rx="6" fill="#ea580c" stroke="#c2410c" stroke-width="2" />
+    <rect x="110" y="48" width="45" height="24" rx="6" fill="#ea580c" stroke="#c2410c" stroke-width="2" />
+  </g>
+  <g transform="translate(550, 705)">
+    <rect x="0" y="0" width="180" height="80" rx="14" fill="#fef3c7" stroke="#b45309" stroke-width="2.5" />
+    <rect x="10" y="8" width="160" height="36" rx="8" fill="#ffffff" stroke="#f59e0b" stroke-width="1.5" />
+    <line x1="90" y1="8" x2="90" y2="44" stroke="#e2e8f0" stroke-width="1.5" />
+    <rect x="25" y="48" width="45" height="24" rx="6" fill="#ea580c" stroke="#c2410c" stroke-width="2" />
+    <rect x="110" y="48" width="45" height="24" rx="6" fill="#ea580c" stroke="#c2410c" stroke-width="2" />
+  </g>
+  <g transform="translate(550, 840)">
+    <rect x="0" y="0" width="180" height="80" rx="14" fill="#fef3c7" stroke="#b45309" stroke-width="2.5" />
+    <rect x="10" y="8" width="160" height="36" rx="8" fill="#ffffff" stroke="#f59e0b" stroke-width="1.5" />
+    <line x1="90" y1="8" x2="90" y2="44" stroke="#e2e8f0" stroke-width="1.5" />
+    <rect x="25" y="48" width="45" height="24" rx="6" fill="#ea580c" stroke="#c2410c" stroke-width="2" />
+    <rect x="110" y="48" width="45" height="24" rx="6" fill="#ea580c" stroke="#c2410c" stroke-width="2" />
+  </g>
+
+  <!-- ==================== FOOTER ==================== -->
+  <g transform="translate(70, 1020)">
+    <!-- Books stack on left -->
+    <rect x="10" y="20" width="70" height="14" rx="2" fill="#3b82f6" />
+    <rect x="15" y="10" width="65" height="12" rx="2" fill="#10b981" />
+    <rect x="20" y="0" width="55" height="12" rx="2" fill="#ef4444" />
+    <text x="95" y="15" font-size="16">⭐</text>
+  </g>
+
+  <!-- Center Motto Pill -->
+  <g transform="translate(250, 1015)">
+    <rect x="0" y="0" width="300" height="50" rx="25" fill="#f0f9ff" stroke="#38bdf8" stroke-width="2.5" filter="url(#shadow)" />
+    <text x="150" y="32" class="motto">Birlikte Daha Güçlüyüz 😊</text>
+  </g>
+
+  <!-- Plant & Pencil Cup on right -->
+  <g transform="translate(620, 1010)">
+    <text x="10" y="35" font-size="36">🪴</text>
+    <rect x="65" y="10" width="30" height="40" rx="4" fill="#0284c7" />
+    <line x1="72" y1="5" x2="72" y2="35" stroke="#f59e0b" stroke-width="3" />
+    <line x1="80" y1="2" x2="80" y2="35" stroke="#10b981" stroke-width="3" />
+    <line x1="88" y1="4" x2="88" y2="35" stroke="#ef4444" stroke-width="3" />
+  </g>
+</svg>

@@ -1,0 +1,7 @@
+{
+  "name": "Saniye Öztürk - Kişisel Bilişim Blogu",
+  "description": "Saniye Öztürk Bilişim Teknolojileri ve Robotik Kodlama Öğretmeni kişisel blogu, ders materyalleri, yapay zeka asistanı ve öğrenci rehberi.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
