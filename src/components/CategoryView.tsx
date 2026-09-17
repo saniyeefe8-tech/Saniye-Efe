@@ -371,10 +371,17 @@ export const CategoryView: React.FC<CategoryViewProps> = ({
                             </span>
                           </div>
 
-                          <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] font-semibold bg-amber-50 text-amber-700 border border-amber-200/60">
-                            <FileText className="w-3 h-3 text-amber-600" />
-                            PDF Hazırlanıyor
-                          </span>
+                          {(item.presentationUrl || item.pdfUrl || item.hasPdf) ? (
+                            <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200">
+                              <Presentation className="w-3 h-3 text-emerald-600" />
+                              {item.presentationType === 'gamma' ? 'Gamma Slaytı Hazır' : 'Slayt / Sunu Hazır'}
+                            </span>
+                          ) : (
+                            <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] font-semibold bg-amber-50 text-amber-700 border border-amber-200/60">
+                              <FileText className="w-3 h-3 text-amber-600" />
+                              PDF Hazırlanıyor
+                            </span>
+                          )}
                         </div>
 
                         {/* Title of the week */}
@@ -394,7 +401,11 @@ export const CategoryView: React.FC<CategoryViewProps> = ({
                       <div className="pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
                         <span className="text-blue-600 group-hover:text-blue-800 font-semibold flex items-center gap-1.5">
                           <Presentation className="w-4 h-4 text-blue-500" />
-                          <span>Ders Sunusunu Aç (PDF)</span>
+                          <span>
+                            {(item.presentationUrl || item.pdfUrl)
+                              ? (item.presentationType === 'gamma' ? 'Ders Slaytını İncele (Gamma)' : 'Ders Sunusunu İncele')
+                              : 'Ders Sunusunu Aç (PDF)'}
+                          </span>
                         </span>
                         <ChevronRight className="w-4 h-4 text-slate-400 group-hover:text-blue-600 group-hover:translate-x-0.5 transition-all" />
                       </div>

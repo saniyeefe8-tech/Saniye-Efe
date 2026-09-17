@@ -104,5 +104,8 @@ export interface WeeklyCurriculumItem {
   title: string;
   description?: string;
   pdfUrl?: string | null;
+  presentationUrl?: string | null;
+  embedUrl?: string | null;
+  presentationType?: 'gamma' | 'pdf' | 'google-slides' | 'external';
   hasPdf: boolean;
 }

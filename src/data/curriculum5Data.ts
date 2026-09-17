@@ -8,8 +8,11 @@ export const CURRICULUM_GRADE_5_TERM_1: WeeklyCurriculumItem[] = [
     weekNumber: 1,
     title: 'Bilişim Teknolojilerinin Sınıflandırılması',
     description: 'Bilişim teknolojilerinin tanımı, kullanım amaçları ve günlük hayattaki sınıflandırılması.',
-    hasPdf: false,
-    pdfUrl: null,
+    hasPdf: true,
+    pdfUrl: 'https://gamma.app/docs/Bilisim-Teknolojileri-Temel-Kavramlar-u0i1grdp5zdqf9c',
+    presentationUrl: 'https://gamma.app/docs/Bilisim-Teknolojileri-Temel-Kavramlar-u0i1grdp5zdqf9c',
+    embedUrl: 'https://gamma.app/embed/u0i1grdp5zdqf9c',
+    presentationType: 'gamma',
   },
   {
     id: 'g5-t1-w2',
