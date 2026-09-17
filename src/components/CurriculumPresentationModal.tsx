@@ -14,6 +14,7 @@ import {
   Maximize2
 } from 'lucide-react';
 import { WeeklyCurriculumItem } from '../types';
+import { PdfSlideViewer } from './slides/PdfSlideViewer';
 
 interface CurriculumPresentationModalProps {
   isOpen: boolean;
@@ -108,6 +109,12 @@ export const CurriculumPresentationModal: React.FC<CurriculumPresentationModalPr
               <span className="px-2.5 py-0.5 rounded-full bg-amber-400/20 text-amber-200 text-xs font-medium border border-amber-300/30">
                 {item.id.startsWith('g6') ? '6. Sınıf Bilişim Müfredatı' : '5. Sınıf Bilişim Müfredatı'}
               </span>
+              {item.presentationType === 'pdf' && (
+                <span className="px-2.5 py-0.5 rounded-full bg-amber-400/25 text-amber-200 text-xs font-semibold border border-amber-300/30 flex items-center gap-1">
+                  <FileText className="w-3 h-3" />
+                  Hazırlanmış PDF Slaytı
+                </span>
+              )}
               {isGamma && (
                 <span className="px-2.5 py-0.5 rounded-full bg-emerald-400/25 text-emerald-200 text-xs font-semibold border border-emerald-300/30 flex items-center gap-1">
                   <Presentation className="w-3 h-3" />
@@ -136,8 +143,10 @@ export const CurriculumPresentationModal: React.FC<CurriculumPresentationModalPr
 
         {/* Content Body */}
         <div className="p-4 sm:p-6 overflow-y-auto space-y-5">
-          {/* If a Presentation / PDF has been linked or uploaded */}
-          {activePdfUrl ? (
+          {/* If item is PDF slide format (like Week 1) */}
+          {item.id === 'g5-t1-w1' && item.presentationType === 'pdf' ? (
+            <PdfSlideViewer onAskAi={onAskAi} />
+          ) : activePdfUrl && activePdfUrl !== 'pdf-slide-w1' ? (
             <div className="space-y-3">
               {/* Status and Action Toolbar */}
               <div className="flex flex-wrap items-center justify-between gap-2 bg-slate-50 border border-slate-200 px-4 py-3 rounded-2xl text-xs sm:text-sm">
@@ -207,7 +216,7 @@ export const CurriculumPresentationModal: React.FC<CurriculumPresentationModalPr
                     rel="noreferrer"
                     className="text-blue-600 hover:text-blue-800 underline flex items-center gap-1 font-medium"
                   >
-                    Gamma Bağlantısını Ziyaret Et
+                    Bağlantıyı Ziyaret Et
                     <ExternalLink className="w-3 h-3" />
                   </a>
                 )}

@@ -374,7 +374,11 @@ export const CategoryView: React.FC<CategoryViewProps> = ({
                           {(item.presentationUrl || item.pdfUrl || item.hasPdf) ? (
                             <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200">
                               <Presentation className="w-3 h-3 text-emerald-600" />
-                              {item.presentationType === 'gamma' ? 'Gamma Slaytı Hazır' : 'Slayt / Sunu Hazır'}
+                              {item.presentationType === 'gamma' 
+                                ? 'Gamma Slaytı Hazır' 
+                                : item.presentationType === 'pdf'
+                                ? 'PDF Slaytı Hazır'
+                                : 'Slayt / Sunu Hazır'}
                             </span>
                           ) : (
                             <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] font-semibold bg-amber-50 text-amber-700 border border-amber-200/60">
@@ -403,7 +407,11 @@ export const CategoryView: React.FC<CategoryViewProps> = ({
                           <Presentation className="w-4 h-4 text-blue-500" />
                           <span>
                             {(item.presentationUrl || item.pdfUrl)
-                              ? (item.presentationType === 'gamma' ? 'Ders Slaytını İncele (Gamma)' : 'Ders Sunusunu İncele')
+                              ? (item.presentationType === 'gamma' 
+                                  ? 'Ders Slaytını İncele (Gamma)' 
+                                  : item.presentationType === 'pdf'
+                                  ? 'Ders Slaytını İncele (PDF)'
+                                  : 'Ders Sunusunu İncele')
                               : 'Ders Sunusunu Aç (PDF)'}
                           </span>
                         </span>
