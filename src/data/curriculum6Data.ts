@@ -18,8 +18,11 @@ export const CURRICULUM_GRADE_6_TERM_1: WeeklyCurriculumItem[] = [
     weekNumber: 2,
     title: 'Bilişim ile Değişim ve Dijital Dönüşüm',
     description: 'Bilişim teknolojilerinin dünü, bugünü ve geleceği; eğitim, sağlık ve sanayideki dijital dönüşümün hayatımıza etkileri.',
-    hasPdf: false,
-    pdfUrl: null,
+    hasPdf: true,
+    pdfUrl: 'pdf-slide-g6-w2',
+    presentationUrl: 'pdf-slide-g6-w2',
+    embedUrl: null,
+    presentationType: 'pdf',
   },
   {
     id: 'g6-t1-w3',

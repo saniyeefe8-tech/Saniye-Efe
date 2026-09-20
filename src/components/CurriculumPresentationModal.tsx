@@ -15,6 +15,8 @@ import {
 } from 'lucide-react';
 import { WeeklyCurriculumItem } from '../types';
 import { PdfSlideViewer } from './slides/PdfSlideViewer';
+import { PdfSlideViewerG5W2 } from './slides/PdfSlideViewerG5W2';
+import { PdfSlideViewerG6W2 } from './slides/PdfSlideViewerG6W2';
 
 interface CurriculumPresentationModalProps {
   isOpen: boolean;
@@ -143,10 +145,14 @@ export const CurriculumPresentationModal: React.FC<CurriculumPresentationModalPr
 
         {/* Content Body */}
         <div className="p-4 sm:p-6 overflow-y-auto space-y-5">
-          {/* If item is PDF slide format (like Week 1) */}
-          {item.id === 'g5-t1-w1' && item.presentationType === 'pdf' ? (
+          {/* If item is PDF slide format */}
+          {item.id === 'g5-t1-w1' ? (
             <PdfSlideViewer onAskAi={onAskAi} />
-          ) : activePdfUrl && activePdfUrl !== 'pdf-slide-w1' ? (
+          ) : item.id === 'g5-t1-w2' ? (
+            <PdfSlideViewerG5W2 onAskAi={onAskAi} />
+          ) : item.id === 'g6-t1-w2' ? (
+            <PdfSlideViewerG6W2 onAskAi={onAskAi} />
+          ) : activePdfUrl && activePdfUrl !== 'pdf-slide-w1' && activePdfUrl !== 'pdf-slide-g5-w2' && activePdfUrl !== 'pdf-slide-g6-w2' ? (
             <div className="space-y-3">
               {/* Status and Action Toolbar */}
               <div className="flex flex-wrap items-center justify-between gap-2 bg-slate-50 border border-slate-200 px-4 py-3 rounded-2xl text-xs sm:text-sm">
