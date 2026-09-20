@@ -135,8 +135,13 @@ export const ChatbotWidget: React.FC<ChatbotWidgetProps> = ({
           className="relative group flex items-center gap-3 pl-4 pr-5 py-3.5 rounded-full bg-gradient-to-r from-blue-600 via-blue-700 to-indigo-700 hover:from-blue-700 hover:to-indigo-800 text-white shadow-xl shadow-blue-600/35 hover:scale-105 transition-all duration-200 cursor-pointer border border-blue-400/30"
         >
           <div className="relative">
-            <div className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center">
-              <Bot className="w-5 h-5 text-white" />
+            <div className="w-8 h-8 rounded-full bg-white/20 p-0.5 overflow-hidden border border-white/40">
+              <img
+                src="/assets/teacher_avatar.jpg"
+                alt="Saniye Öğretmen"
+                className="w-full h-full object-cover rounded-full"
+                referrerPolicy="no-referrer"
+              />
             </div>
             <span className="absolute -top-0.5 -right-0.5 w-3 h-3 bg-emerald-400 border-2 border-white rounded-full"></span>
           </div>
@@ -158,8 +163,13 @@ export const ChatbotWidget: React.FC<ChatbotWidgetProps> = ({
           {/* Header */}
           <div className="bg-gradient-to-r from-blue-600 via-blue-700 to-indigo-700 p-4 text-white flex items-center justify-between shadow-xs">
             <div className="flex items-center gap-3">
-              <div className="relative w-10 h-10 rounded-2xl bg-white/15 flex items-center justify-center border border-white/20">
-                <Bot className="w-6 h-6 text-white" />
+              <div className="relative w-10 h-10 rounded-2xl bg-white/15 p-0.5 overflow-hidden border border-white/30 shadow-xs">
+                <img
+                  src="/assets/teacher_avatar.jpg"
+                  alt="Saniye Öğretmen"
+                  className="w-full h-full object-cover rounded-[14px]"
+                  referrerPolicy="no-referrer"
+                />
                 <span className="absolute -bottom-0.5 -right-0.5 w-3 h-3 bg-emerald-400 border-2 border-blue-700 rounded-full"></span>
               </div>
               <div>

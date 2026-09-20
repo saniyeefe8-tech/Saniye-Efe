@@ -141,11 +141,11 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           <div className="lg:col-span-5">
             <div className="bg-white rounded-3xl p-6 shadow-xl shadow-blue-900/5 border border-blue-100 relative">
               <div className="flex items-center gap-4 mb-5 pb-5 border-b border-slate-100">
-                <div className="w-16 h-16 rounded-2xl bg-gradient-to-tr from-blue-600 to-indigo-500 p-0.5 shadow-md shrink-0 overflow-hidden">
+                <div className="w-16 h-16 rounded-2xl bg-gradient-to-tr from-blue-600 via-indigo-500 to-pink-500 p-0.5 shadow-md shadow-blue-500/20 shrink-0 overflow-hidden relative group">
                   <img
-                    src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=300&q=80"
-                    alt="Bilişim ve Bilgisayar Dünyası"
-                    className="w-full h-full object-cover rounded-2xl"
+                    src="/assets/teacher_avatar.jpg"
+                    alt="Saniye ÖZTÜRK - Bilişim Teknolojileri ve Robotik Kodlama Öğretmeni"
+                    className="w-full h-full object-cover rounded-2xl transition-transform duration-300 group-hover:scale-105"
                     referrerPolicy="no-referrer"
                   />
                 </div>

@@ -33,8 +33,13 @@ export const Footer: React.FC<FooterProps> = ({
           {/* Brand Col */}
           <div className="space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center text-white shadow-md shadow-blue-500/20">
-                <GraduationCap className="w-6 h-6" />
+              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-500 to-indigo-600 p-0.5 shadow-md shadow-blue-500/20 overflow-hidden shrink-0">
+                <img
+                  src="/assets/teacher_avatar.jpg"
+                  alt="Saniye ÖZTÜRK"
+                  className="w-full h-full object-cover rounded-[10px]"
+                  referrerPolicy="no-referrer"
+                />
               </div>
               <div>
                 <h3 className="text-lg font-bold text-white tracking-tight">Saniye ÖZTÜRK</h3>

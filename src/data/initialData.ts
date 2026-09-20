@@ -77,7 +77,7 @@ Derslerimizde Mblock ve blok tabanlı etkinliklerle öğrencilerimizin bu düş�
     author: {
       name: 'Saniye ÖZTÜRK',
       title: 'Bilişim Teknolojileri ve Robotik Kodlama Öğretmeni',
-      avatar: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=256&q=80',
+      avatar: '/assets/teacher_avatar.jpg',
     },
     publishedAt: '12 Mart 2026',
     readTime: '4 dk okuma',
@@ -106,7 +106,7 @@ Başlangıçta büyük projeler yerine küçük adımlarla ilerleyin. Karakteri 
     author: {
       name: 'Saniye ÖZTÜRK',
       title: 'Bilişim Teknolojileri ve Robotik Kodlama Öğretmeni',
-      avatar: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=256&q=80',
+      avatar: '/assets/teacher_avatar.jpg',
     },
     publishedAt: '05 Mart 2026',
     readTime: '5 dk okuma',
@@ -135,7 +135,7 @@ Başlangıçta büyük projeler yerine küçük adımlarla ilerleyin. Karakteri 
     author: {
       name: 'Saniye ÖZTÜRK',
       title: 'Bilişim Teknolojileri ve Robotik Kodlama Öğretmeni',
-      avatar: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=256&q=80',
+      avatar: '/assets/teacher_avatar.jpg',
     },
     publishedAt: '24 Şubat 2026',
     readTime: '3 dk okuma',
@@ -161,7 +161,7 @@ Başlangıçta büyük projeler yerine küçük adımlarla ilerleyin. Karakteri 
     author: {
       name: 'Saniye ÖZTÜRK',
       title: 'Bilişim Teknolojileri ve Robotik Kodlama Öğretmeni',
-      avatar: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=256&q=80',
+      avatar: '/assets/teacher_avatar.jpg',
     },
     publishedAt: '18 Şubat 2026',
     readTime: '4 dk okuma',
@@ -174,14 +174,14 @@ Başlangıçta büyük projeler yerine küçük adımlarla ilerleyin. Karakteri 
 ];
 
 export const INITIAL_USER = {
-  id: 'guest-1',
-  name: 'Öğrenci / Misafir',
-  email: 'ogrenci@meb.k12.tr',
-  avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=160&q=80',
-  role: 'Öğrenci' as const,
-  grade: '5. Sınıf' as const,
-  school: 'Atatürk Ortaokulu',
-  provider: 'eba' as const,
+  id: 'teacher-saniye',
+  name: 'Saniye ÖZTÜRK',
+  email: 'saniyeefe8@gmail.com',
+  avatar: '/assets/teacher_avatar.jpg',
+  role: 'Öğretmen' as const,
+  grade: '5. ve 6. Sınıf' as const,
+  school: 'MEB Bilişim Teknolojileri ve Yazılım',
+  provider: 'google' as const,
   savedPostIds: ['post-1', 'post-2'],
   completedTasks: ['task-1'],
   joinedDate: 'Eylül 2025',

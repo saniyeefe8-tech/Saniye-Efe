@@ -138,7 +138,7 @@ export const BlogSection: React.FC<BlogSectionProps> = ({
       author: {
         name: currentUser?.name || 'Saniye ÖZTÜRK',
         title: currentUser?.role === 'Öğretmen' ? 'Bilişim Teknolojileri Öğretmeni' : 'Bilişim Yazarı',
-        avatar: currentUser?.avatar || 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=256&q=80',
+        avatar: currentUser?.avatar || '/assets/teacher_avatar.jpg',
       },
       publishedAt: 'Şimdi',
       readTime: '3 dk okuma',

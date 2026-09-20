@@ -82,8 +82,16 @@ export const Navbar: React.FC<NavbarProps> = ({
             className="flex items-center gap-3 cursor-pointer group"
             id="brand-logo-btn"
           >
-            <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-600 to-indigo-700 flex items-center justify-center text-white shadow-md shadow-blue-500/20 group-hover:scale-105 transition-transform duration-200">
-              <GraduationCap className="w-7 h-7 text-white" />
+            <div className="relative w-12 h-12 rounded-xl bg-gradient-to-br from-blue-600 to-indigo-700 p-0.5 shadow-md shadow-blue-500/20 group-hover:scale-105 transition-transform duration-200 overflow-visible">
+              <img
+                src="/assets/teacher_avatar.jpg"
+                alt="Saniye ÖZTÜRK Profil"
+                className="w-full h-full object-cover rounded-[10px]"
+                referrerPolicy="no-referrer"
+              />
+              <span className="absolute -bottom-1 -right-1 w-4 h-4 bg-blue-600 rounded-full border-2 border-white flex items-center justify-center text-white">
+                <GraduationCap className="w-2.5 h-2.5 text-white" />
+              </span>
             </div>
             <div>
               <div className="flex items-center gap-1.5">
